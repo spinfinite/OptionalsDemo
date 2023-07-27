@@ -1,11 +1,19 @@
 
-let myOptional: String?
+struct MyOptional {
+    
+    var property = 123
+    func method() {
+        print("I am the struct's method.")
+    }
+}
 
-myOptional = nil
+let myOptional: MyOptional?
 
-let text: String = myOptional ?? "I am the default value"
+myOptional = MyOptional()
 
-print(text)
+myOptional?.method()
+
+
 
 
 
