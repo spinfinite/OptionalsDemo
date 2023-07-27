@@ -1,11 +1,13 @@
-//
-//  main.swift
-//  OptionalsDemo
-//
-//  Created by Dad's 6,1 on 7/27/23.
-//
 
-import Foundation
+let myOptional: String?
 
-print("Hello, World!")
+myOptional = "Sergio"
+
+if let safeOptional = myOptional {
+    let text: String = safeOptional
+    let text2: String = safeOptional
+    print(safeOptional)
+} else {
+    print("myOptional was found to be nil.")
+}
 
